@@ -1,0 +1,175 @@
+/* 🟦 Ye teenon thumbnails hain jo product image ke neeche ya side me aati hain */
+[id^="thumb1_"],
+[id^="thumb2_"],
+[id^="thumb3_"] {
+    width: 80px;                  
+    height: 80px;
+    object-fit: cover;          
+    cursor: pointer;
+    border-radius: 10px;        
+    margin-bottom: 0.5rem;      
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* 🔍 Jab user thumbnail pe hover kare to zoom aur shadow mile */
+[id^="thumb1_"]:hover,
+[id^="thumb2_"]:hover,
+[id^="thumb3_"]:hover {
+    transform: scale(1.12);      
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); 
+}
+
+/* 🖼 Ye main image hai jo thumbnail click hone pe badalti hai */
+[id^="mainImage"] {
+    width: 100%;                 
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+    transition: all 0.4s ease-in-out;
+}
+
+/* 🔳 Left side me images dikh rahi hoti hain modal ke andar */
+#leftside {
+    background: #f7f9fc;        
+    /* padding-right: 18px;          */
+    border-right: 1px solid #e0e0e0; 
+    border-radius: 12px 0 0 12px;
+}
+
+/* 📄 Right side me product ka naam, price, description waghera  */
+#rightside {
+    /* padding-left: 25px;          */
+    background-color: #ffffff;   
+    border-radius: 0 12px 12px 0; 
+}
+
+/* 🏷 Ye product ka title */
+#rightside h4 {
+    font-weight: 700;           
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+/* 💵 Ye product ki price hai */
+#rightside h5 {
+    color: #28a745;              
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 📜 Ye product ka description paragraph hai */
+#rightside p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*  Ye quantity buttons hain (- aur +) */
+#rightside button.btn-outline-secondary {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    padding: 0;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover karne pe ye button dark ho jata hai */
+#rightside button.btn-outline-secondary:hover {
+    background-color: #585454;
+}
+
+/*  Ye input field hai jahan user quantity type karta hai */
+#rightside input[type="number"] {
+    font-size: 14px;
+    height: 34px;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+/*  Add to Cart ka main button hai */
+#rightside .btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3); 
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Jab Add to Cart pe hover karo to animation aur shadow mile */
+#rightside .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f80);
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#cart-blade{
+    margin-top: 130px !important;
+ 
+}
+
+#header-cart-icon{
+    font-size: 20px;
+    position: relative;
+}
+
+.badge {
+	transform: translate(-50%, -90%) !important;
+}
+
+
+
+/* ye jo admin panel he usme jo humne customer order table me customer id column id di he uski css hover k leye  */
+
+#admin-customer-order-id {
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+   padding:7px 50px ;
+}
+
+#admin-customer-order-id::after {
+    content: "View Details";
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 999;
+}
+
+#admin-customer-order-id:hover::after {
+    opacity: 1;
+}
+
+
+#stylemart-logo{
+
+    margin-top: -20px;
+}
+
+.custom-modal-center{
+    
+ 
+    min-height: calc(100vh - 10vh); /* thoda top & bottom space */
+    margin-top: 20vh; /* extra space from top */
+    min-width: 80vw !important;
+}
+

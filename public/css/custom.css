@@ -1,0 +1,17 @@
+
+/* link se jo shop pr click krty he us ka main div he uski id he ye  */
+#product-listed{
+    margin-top: 100px;
+}
+
+/* jo index page pr product print krwaey he loop se us card ki css he ye  */
+
+/* #index-product{
+    background: red;
+} */
+
+#index-product .block2-pic {
+    aspect-ratio: 10/10;
+}
+
+
